@@ -1,0 +1,3 @@
+Finding anagrams of 'graniabuckley'...
+
+Fatal error: Allowed memory size of 268435456 bytes exhausted (tried to allocate 88 bytes) in /var/www/projects/trunk/common/php/generalObjects/AnagramFinder.php on line 123

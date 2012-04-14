@@ -1,0 +1,33 @@
+/**************************************************************************************************\
+*
+* wim: ts=3 sw=3 et wrap co=100 go-=b
+*
+* Filename: "style.css"
+*
+* Project: tomcdonnell.net
+*
+* Purpose:  Styles for the Anagram Finder page.
+*
+* Author: Tom McDonnell 2010-03-13
+*
+\**************************************************************************************************/
+
+a.backLink,
+a.navLink ,
+a.commentLink
+{
+   font-size: small;
+}
+
+td, th
+{
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+p.errorMessage
+{
+   color: red;
+}
+
+/*******************************************END*OF*FILE********************************************/
