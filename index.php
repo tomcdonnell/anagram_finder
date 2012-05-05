@@ -19,8 +19,8 @@ error_reporting(-1);
 
 // Includes. ///////////////////////////////////////////////////////////////////////////////////////
 
-require_once dirname(__FILE__) . '/../library/tom/php/utils/Utils_validator.php';
-require_once dirname(__FILE__) . '/../library/tom/php/classes/AnagramFinder.php';
+require_once dirname(__FILE__) . '/lib_tom/php/utils/UtilsValidator.php';
+require_once dirname(__FILE__) . '/lib_tom/php/classes/AnagramFinder.php';
 
 // Defines. ////////////////////////////////////////////////////////////////////////////////////////
 
@@ -62,7 +62,7 @@ try
       {
          foreach ($includedWordsValidated as $includedWord)
          {
-            $submittedTextReduced = Utils_string::diff($submittedTextReduced, $includedWord);
+            $submittedTextReduced = UtilsString::diff($submittedTextReduced, $includedWord);
          }
       }
 
@@ -101,7 +101,7 @@ catch (Exception $e)
  */
 function validateGetString()
 {
-   Utils_validator::checkArray
+   UtilsValidator::checkArray
    (
       $_GET, array(), array
       (
@@ -117,7 +117,7 @@ function validateGetString()
    {
       $submittedTextValidated = strtolower
       (
-         Utils_string::removeAllNonAlphaCharacters($_GET['submittedText'])
+         UtilsString::removeAllNonAlphaCharacters($_GET['submittedText'])
       );
    }
 
@@ -127,7 +127,7 @@ function validateGetString()
 
       foreach ($_GET['includedWords'] as $includedWord)
       {
-         $includedWordsValidated[] = Utils_string::removeAllNonAlphaCharacters($includedWord);
+         $includedWordsValidated[] = UtilsString::removeAllNonAlphaCharacters($includedWord);
       }
    }
 
@@ -160,7 +160,7 @@ function getN_anagramsBySortedKSubsetsByLength($submittedTextReduced)
 
          if ($strlenSortedKSubsetReduced <= MAX_STRLEN_TO_FIND_N_ANAGRAMS_DIRECTLY)
          {
-            $sortedKSubsetReduced = Utils_string::diff($submittedTextReduced, $sortedKSubset);
+            $sortedKSubsetReduced = UtilsString::diff($submittedTextReduced, $sortedKSubset);
 
             $aTree          = $anagramFinder->getMultipleWordAnagramTree($sortedKSubsetReduced);
             $anagramsAsKeys = $anagramFinder->getAnagramsAsKeysFromAnagramTreeRecursively($aTree);
