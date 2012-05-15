@@ -395,7 +395,7 @@ function echoAnagramsAsHtmlOrderedList()
  <head>
 <?php
  $unixTime = time();
- foreach ($filesCss as $file) {echo "  <link rel='stylesheet' href='$file?$unixTime' />\n";}
+ foreach ($filesCss as $file) {echo "  <link rel='stylesheet' href='$file?$unixTime'/>\n";}
 ?>
   <title>Anagram Finder</title>
  </head>
