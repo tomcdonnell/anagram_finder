@@ -19,8 +19,8 @@ error_reporting(-1);
 
 // Includes. ///////////////////////////////////////////////////////////////////////////////////////
 
-require_once dirname(__FILE__) . '/lib_tom/php/utils/UtilsValidator.php';
-require_once dirname(__FILE__) . '/lib_tom/php/classes/AnagramFinder.php';
+require_once dirname(__FILE__) . '/../../lib/tom/php/utils/UtilsValidator.php';
+require_once dirname(__FILE__) . '/../../lib/tom/php/classes/AnagramFinder.php';
 
 // Defines. ////////////////////////////////////////////////////////////////////////////////////////
 
@@ -401,7 +401,7 @@ function echoAnagramsAsHtmlOrderedList()
  </head>
  <body>
   <a class='backLink' href='http://www.tomcdonnell.net'>Back to tomcdonnell.net</a> |
-  <a class='backLink' href='http://www.tomcdonnell.net/small_apps/anagram_checker/'>
+  <a class='backLink' href='http://www.tomcdonnell.net/submodules/anagram_checker/'>
    Anagram Checker
   </a>
   <h1>Anagram Finder</h1>
