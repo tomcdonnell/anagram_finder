@@ -400,8 +400,8 @@ function echoAnagramsAsHtmlOrderedList()
   <title>Anagram Finder</title>
  </head>
  <body>
-  <a class='backLink' href='http://www.tomcdonnell.net'>Back to tomcdonnell.net</a> |
-  <a class='backLink' href='http://www.tomcdonnell.net/submodules/anagram_checker/'>
+  <a class='backLink' href='../../index.php'>Back to tomcdonnell.net</a> |
+  <a class='backLink' href='../../submodules/anagram_checker/'>
    Anagram Checker
   </a>
   <h1>Anagram Finder</h1>
